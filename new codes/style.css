@@ -1,0 +1,130 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.forms-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.insert-form, .update-record-form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.insert-form input, 
+.update-record-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.insert-form input:focus,
+.update-record-form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #121212;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+table tr:first-child {
+    background-color: #2c2c2c;
+    color: #4CAF50;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    color: #e0e0e0;
+}
+
+table th:last-child, 
+table td:last-child {
+    border-right: none;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+.action-buttons form {
+    display: inline;
+    margin: 0 5px;
+}
+
+.action-buttons button {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.action-buttons button:hover {
+    background-color: #444;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forms-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
